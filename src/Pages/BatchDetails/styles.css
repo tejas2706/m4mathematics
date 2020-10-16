@@ -1,0 +1,80 @@
+.batchDetails__container {
+    padding: 20px;
+    /* width: 100%; */
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.batchDetails__title {
+    align-self: flex-start;
+}
+
+.batchDetails__body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;  
+    border: 2px solid #3b8039;
+    border-radius: 10px;
+    width: 85vw;
+    box-shadow: 5px 5px 10px grey;
+    padding: 10px;
+}
+
+.batchDetails__line{
+    width: 100%;
+    margin-bottom: 10px;
+    border-top: 1px solid rgb(126, 125, 125);
+}
+
+.batchDetails__sessions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* margin: 10px; */
+}
+
+.session__button {
+    width: 200px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #dbdada;
+    border: 1px solid rgb(170, 170, 170);
+    color: #1d1d1d;
+    font-size: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.session__button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.session__button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.session__button:hover span {
+    padding-right: 25px;
+}
+  
+.session__button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

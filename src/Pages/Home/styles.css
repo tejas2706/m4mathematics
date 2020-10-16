@@ -1,0 +1,11 @@
+.home__body{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;     
+}
+
+.home__batches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
